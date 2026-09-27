@@ -1,0 +1,12 @@
+{
+  "name": "foundry-line",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Foundry Line — co-op factory shooter (three.js client + Node game server, no dependencies)",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node test/shared.test.mjs && node test/factory.test.mjs && node test/net.test.mjs"
+  }
+}

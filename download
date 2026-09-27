@@ -1,0 +1,11 @@
+node_modules/
+# local test fixtures (big vendored three.js copy, generated pages, scenario scripts)
+test/vendor/
+test/*.html
+test/*.json
+test/_*
+*.log
+.DS_Store
+test/reload_test.py
+test/shot.py
+test-output/

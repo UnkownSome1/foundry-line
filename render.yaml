@@ -1,0 +1,15 @@
+# Render Blueprint: one free web service serves the game page and runs the co-op server.
+# Render → New → Blueprint → pick this repository. No build step, no npm packages.
+services:
+  - type: web
+    name: foundry-line
+    runtime: node
+    plan: free
+    buildCommand: echo "no dependencies to install"
+    startCommand: node server/server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
